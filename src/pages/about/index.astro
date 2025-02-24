@@ -1,0 +1,69 @@
+---
+import AboutLayout from "@layouts/AboutLayout.astro";
+import { EDUCATION_DATA } from "@content/about/education-data";
+import { CAREER_DATA } from "@content/about/career-data";
+
+const frontmatter = {
+  title: "About",
+  description: "Learn more about my background and experience",
+};
+---
+
+<AboutLayout frontmatter={frontmatter}>
+  <div class="space-y-16">
+    <div>
+      <h2>Education</h2>
+      {
+        EDUCATION_DATA.map(edu => (
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <h3 class="!m-0 !mb-0 text-lg">{edu.name}</h3>
+              <span class="text-sm text-gray-500 dark:text-gray-400">
+                {edu.date}
+              </span>
+            </div>
+            <p class="text-sm">{edu.title}</p>
+            <p class="text-sm">{edu.description}</p>
+          </div>
+        ))
+      }
+    </div>
+
+    <div>
+      <h2>Career</h2>
+      <div class="space-y-10">
+        {
+          CAREER_DATA.map(career => (
+            <div class="">
+              <div class="flex items-center justify-between">
+                <h3 class="!m-0 text-lg">
+                  {career.url ? (
+                    <a
+                      href={career.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="font-bold hover:text-skin-accent"
+                    >
+                      {career.name}
+                    </a>
+                  ) : (
+                    career.name
+                  )}
+                </h3>
+                <span class="text-sm text-gray-500 dark:text-gray-400">
+                  {career.date}
+                </span>
+              </div>
+              <p class="text-base font-medium">{career.title}</p>
+              <ul class="list-disc space-y-1 pl-4">
+                {career.description.map(desc => (
+                  <li class="text-gray-600 dark:text-gray-300">{desc}</li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</AboutLayout>
