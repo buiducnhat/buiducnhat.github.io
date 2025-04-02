@@ -14,7 +14,9 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@astro-kits/google-analytics": "^0.1.0",
     "@astrojs/check": "^0.9.3",
+    "@astrojs/partytown": "^2.1.4",
     "@astrojs/rss": "^4.0.7",
     "@resvg/resvg-js": "^2.6.2",
     "astro": "^4.16.18",
