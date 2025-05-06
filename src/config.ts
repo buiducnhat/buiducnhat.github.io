@@ -1,9 +1,9 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://buiducnhat.github.io", // replace this with your deployed domain
+  website: "https://buiducnhat.work", // replace this with your deployed domain
   author: "Nhat Bui",
-  profile: "https://buiducnhat.github.io",
+  profile: "https://buiducnhat.work",
   desc: "Portfolio of Nhat Bui",
   title: "Nhat Bui",
   ogImage: "og.png",
@@ -71,4 +71,4 @@ export const SOCIALS: SocialObjects = [
 ];
 
 export const OBJECTIVE =
-  "I have about 4 years of experience working in IT field. I can work as Fullstack Developer with main tech-stack are NodeJs, NestJS, .NET, React/Next.js, VueJs and also experienced with Cloud Server for building high-scalable Web application or system. I am an Open Source lover, who always try to bring new things to the community";
+  "I have several years of experience working in IT field. I can work as Fullstack Developer with main tech-stack are NodeJs, NestJS, .NET, React/Next.js, VueJs and also experienced with Cloud Server for building high-scalable Web application or system. I am an Open Source lover, who always try to bring new things to the community";
