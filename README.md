@@ -3,7 +3,7 @@
 ![AstroPaper](public/astropaper-og.jpg)
 [![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/community/file/1356898632249991861)
 ![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![GitHub](https://img.shields.io/github/license/satnaing/astro-paper?color=%232F3741&style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/buiducnhat/buiducnhat.github.io?color=%232F3741&style=for-the-badge)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white&style=for-the-badge)](https://conventionalcommits.org)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=for-the-badge)](http://commitizen.github.io/cz-cli/)
 
@@ -24,7 +24,7 @@ Read [the blog posts](https://astro-paper.pages.dev/posts/) or check [the README
 - [x] sitemap & rss feed
 - [x] followed best practices
 - [x] highly customizable
-- [x] dynamic OG image generation for blog posts [#15](https://github.com/satnaing/astro-paper/pull/15) ([Blog Post](https://astro-paper.pages.dev/posts/dynamic-og-image-generation-in-astropaper-blog-posts/))
+- [x] dynamic OG image generation for blog posts [#15](https://github.com/buiducnhat/buiducnhat.github.io/pull/15) ([Blog Post](https://astro-paper.pages.dev/posts/dynamic-og-image-generation-in-astropaper-blog-posts/))
 
 _Note: I've tested screen-reader accessibility of AstroPaper using **VoiceOver** on Mac and **TalkBack** on Android. I couldn't test all other screen-readers out there. However, accessibility enhancements in AstroPaper should be working fine on others as well._
 
@@ -101,16 +101,16 @@ You can start using this project locally by running the following command in you
 
 ```bash
 # pnpm
-pnpm create astro@latest --template satnaing/astro-paper
+pnpm create astro@latest --template buiducnhat/buiducnhat.github.io
 
 # npm
-npm create astro@latest -- --template satnaing/astro-paper
+npm create astro@latest -- --template buiducnhat/buiducnhat.github.io
 
 # yarn
-yarn create astro --template satnaing/astro-paper
+yarn create astro --template buiducnhat/buiducnhat.github.io
 
 # bun
-bun create astro@latest -- --template satnaing/astro-paper
+bun create astro@latest -- --template buiducnhat/buiducnhat.github.io
 ```
 
 Then start the project by running the following commands:
@@ -142,7 +142,7 @@ You can easily add your [Google Site Verification HTML tag](https://support.goog
 PUBLIC_GOOGLE_SITE_VERIFICATION=your-google-site-verification-value
 ```
 
-> See [this discussion](https://github.com/satnaing/astro-paper/discussions/334#discussioncomment-10139247) for adding AstroPaper to the Google Search Console.
+> See [this discussion](https://github.com/buiducnhat/buiducnhat.github.io/discussions/334#discussioncomment-10139247) for adding AstroPaper to the Google Search Console.
 
 ## 🧞 Commands
 
@@ -165,7 +165,7 @@ All commands are run from the root of the project, from a terminal:
 | `docker build -t astropaper .`       | Build Docker image for AstroPaper.                                                                                               |
 | `docker run -p 4321:80 astropaper`   | Run AstroPaper on Docker. The website will be accessible at `http://localhost:4321`.                                             |
 
-> **_Warning!_** Windows PowerShell users may need to install the [concurrently package](https://www.npmjs.com/package/concurrently) if they want to [run diagnostics](https://docs.astro.build/en/reference/cli-reference/#astro-check) during development (`astro check --watch & astro dev`). For more info, see [this issue](https://github.com/satnaing/astro-paper/issues/113).
+> **_Warning!_** Windows PowerShell users may need to install the [concurrently package](https://www.npmjs.com/package/concurrently) if they want to [run diagnostics](https://docs.astro.build/en/reference/cli-reference/#astro-check) during development (`astro check --watch & astro dev`). For more info, see [this issue](https://github.com/buiducnhat/buiducnhat.github.io/issues/113).
 
 ## ✨ Feedback & Suggestions
 
@@ -177,4 +177,4 @@ Licensed under the MIT License, Copyright © 2025
 
 ---
 
-Made with 🤍 by [Sat Naing](https://satnaing.dev) 👨🏻‍💻 and [contributors](https://github.com/satnaing/astro-paper/graphs/contributors).
+Made with 🤍 by [Sat Naing](https://satnaing.dev) 👨🏻‍💻 and [contributors](https://github.com/buiducnhat/buiducnhat.github.io/graphs/contributors).

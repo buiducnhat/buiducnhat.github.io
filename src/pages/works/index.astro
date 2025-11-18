@@ -1,0 +1,291 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Socials from "@/components/Socials.astro";
+import LinkButton from "@/components/LinkButton.astro";
+import Hr from "@/components/Hr.astro";
+import IconMail from "@/assets/icons/IconMail.svg";
+import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
+import { SITE } from "@/config";
+import { SOCIALS } from "@/constants";
+---
+
+<Layout
+  title={`Works - ${SITE.title}`}
+  description="Professional development services, freelancing, and team capabilities. Get your project done with expertise and quality."
+>
+  <Header />
+  <main id="main-content" data-layout="works">
+    <section id="hero" class="pt-8 pb-6">
+      <h1 class="my-4 text-4xl font-bold sm:my-8 sm:text-5xl">
+        Let's Build Something Great Together
+      </h1>
+      <p class="text-lg">
+        We are a team of skilled developers and designers ready to bring your
+        ideas to life. Whether you need a web application, mobile app, or custom
+        software solution, we've got you covered.
+      </p>
+      <div class="mt-6 flex flex-col gap-4 sm:flex-row">
+        <LinkButton
+          href="mailto:nhaths4701@gmail.com?subject=Project Inquiry"
+          class="px-6 py-3 text-lg font-medium"
+        >
+          Get Started
+          <IconArrowRight class="inline-block rtl:-rotate-180" />
+        </LinkButton>
+        <LinkButton href="#services" class="px-6 py-3 text-lg font-medium">
+          Our Services
+        </LinkButton>
+      </div>
+    </section>
+
+    <Hr />
+
+    <section id="services" class="pt-12 pb-6">
+      <h2 class="mb-8 text-2xl font-semibold tracking-wide">Our Services</h2>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="rounded-lg border border-border bg-muted/30 p-6">
+          <h3 class="mb-3 text-xl font-semibold text-accent">
+            Web Development
+          </h3>
+          <p>
+            Modern, responsive web applications built with cutting-edge
+            technologies. From simple landing pages to complex full-stack
+            applications.
+          </p>
+        </div>
+        <div class="rounded-lg border border-border bg-muted/30 p-6">
+          <h3 class="mb-3 text-xl font-semibold text-accent">
+            Mobile Development
+          </h3>
+          <p>
+            Native and cross-platform mobile applications for iOS and Android.
+            User-friendly interfaces with excellent performance.
+          </p>
+        </div>
+        <div class="rounded-lg border border-border bg-muted/30 p-6">
+          <h3 class="mb-3 text-xl font-semibold text-accent">
+            API Development
+          </h3>
+          <p>
+            RESTful and GraphQL APIs designed for scalability and security.
+            Integration services for third-party platforms.
+          </p>
+        </div>
+        <div class="rounded-lg border border-border bg-muted/30 p-6">
+          <h3 class="mb-3 text-xl font-semibold text-accent">UI/UX Design</h3>
+          <p>
+            Beautiful, intuitive user interfaces that enhance user experience.
+            From wireframes to pixel-perfect designs.
+          </p>
+        </div>
+        <div class="rounded-lg border border-border bg-muted/30 p-6">
+          <h3 class="mb-3 text-xl font-semibold text-accent">
+            Consulting & Architecture
+          </h3>
+          <p>
+            Technical consulting for system architecture, code reviews, and best
+            practices. Help your team make better decisions.
+          </p>
+        </div>
+        <div class="rounded-lg border border-border bg-muted/30 p-6">
+          <h3 class="mb-3 text-xl font-semibold text-accent">
+            Maintenance & Support
+          </h3>
+          <p>
+            Ongoing maintenance, bug fixes, and feature updates. Keep your
+            applications running smoothly.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <Hr />
+
+    <section id="skills" class="pt-12 pb-6">
+      <h2 class="mb-8 text-2xl font-semibold tracking-wide">
+        Technologies & Skills
+      </h2>
+      <div class="grid gap-6 sm:grid-cols-2">
+        <div>
+          <h3 class="mb-4 text-xl font-semibold">Frontend</h3>
+          <ul class="space-y-2">
+            <li class="flex items-center">
+              <span class="me-2">•</span>
+              <span>React, Next.js, Astro, Vue.js</span>
+            </li>
+            <li class="flex items-center">
+              <span class="me-2">•</span>
+              <span>TypeScript, JavaScript (ES6+)</span>
+            </li>
+            <li class="flex items-center">
+              <span class="me-2">•</span>
+              <span>Tailwind CSS, CSS-in-JS</span>
+            </li>
+            <li class="flex items-center">
+              <span class="me-2">•</span>
+              <span>Responsive Design, PWA</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="mb-4 text-xl font-semibold">Backend</h3>
+          <ul class="space-y-2">
+            <li class="flex items-center">
+              <span class="me-2">•</span>
+              <span>Node.js, Python, Go</span>
+            </li>
+            <li class="flex items-center">
+              <span class="me-2">•</span>
+              <span>RESTful APIs, GraphQL</span>
+            </li>
+            <li class="flex items-center">
+              <span class="me-2">•</span>
+              <span>Database Design & Optimization</span>
+            </li>
+            <li class="flex items-center">
+              <span class="me-2">•</span>
+              <span>Microservices Architecture</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="mb-4 text-xl font-semibold">DevOps & Tools</h3>
+          <ul class="space-y-2">
+            <li class="flex items-center">
+              <span class="me-2">•</span>
+              <span>Docker, Kubernetes</span>
+            </li>
+            <li class="flex items-center">
+              <span class="me-2">•</span>
+              <span>CI/CD Pipelines</span>
+            </li>
+            <li class="flex items-center">
+              <span class="me-2">•</span>
+              <span>Cloud Platforms (AWS, GCP, Azure)</span>
+            </li>
+            <li class="flex items-center">
+              <span class="me-2">•</span>
+              <span>Git, GitHub Actions</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="mb-4 text-xl font-semibold">Mobile & Others</h3>
+          <ul class="space-y-2">
+            <li class="flex items-center">
+              <span class="me-2">•</span>
+              <span>React Native, Flutter</span>
+            </li>
+            <li class="flex items-center">
+              <span class="me-2">•</span>
+              <span>iOS & Android Development</span>
+            </li>
+            <li class="flex items-center">
+              <span class="me-2">•</span>
+              <span>Testing & Quality Assurance</span>
+            </li>
+            <li class="flex items-center">
+              <span class="me-2">•</span>
+              <span>Agile/Scrum Methodologies</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <Hr />
+
+    <section id="why-us" class="pt-12 pb-6">
+      <h2 class="mb-8 text-2xl font-semibold tracking-wide">Why Choose Us</h2>
+      <div class="grid gap-6 sm:grid-cols-2">
+        <div class="rounded-lg border border-border bg-muted/30 p-6">
+          <h3 class="mb-3 text-xl font-semibold text-accent">
+            Experienced Team
+          </h3>
+          <p>
+            Years of combined experience in software development, working with
+            startups to enterprise-level applications.
+          </p>
+        </div>
+        <div class="rounded-lg border border-border bg-muted/30 p-6">
+          <h3 class="mb-3 text-xl font-semibold text-accent">Quality Code</h3>
+          <p>
+            Clean, maintainable, and well-documented code following industry
+            best practices and modern development standards.
+          </p>
+        </div>
+        <div class="rounded-lg border border-border bg-muted/30 p-6">
+          <h3 class="mb-3 text-xl font-semibold text-accent">
+            Flexible Engagement
+          </h3>
+          <p>
+            Available for full-time projects, part-time collaboration, or
+            one-time freelance work. We adapt to your needs.
+          </p>
+        </div>
+        <div class="rounded-lg border border-border bg-muted/30 p-6">
+          <h3 class="mb-3 text-xl font-semibold text-accent">
+            Timely Delivery
+          </h3>
+          <p>
+            We understand deadlines matter. Expect reliable delivery with
+            transparent communication throughout the project.
+          </p>
+        </div>
+        <div class="rounded-lg border border-border bg-muted/30 p-6">
+          <h3 class="mb-3 text-xl font-semibold text-accent">
+            Open Source Mindset
+          </h3>
+          <p>
+            Passionate about open source and community contribution. We bring
+            innovation and modern solutions to every project.
+          </p>
+        </div>
+        <div class="rounded-lg border border-border bg-muted/30 p-6">
+          <h3 class="mb-3 text-xl font-semibold text-accent">
+            Ongoing Support
+          </h3>
+          <p>
+            Not just a one-time delivery. We provide maintenance, updates, and
+            support to ensure your project continues to thrive.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <Hr />
+
+    <section id="contact" class="pt-12 pb-6">
+      <h2 class="mb-8 text-2xl font-semibold tracking-wide">
+        Ready to Start Your Project?
+      </h2>
+      <p class="mb-6 text-lg">
+        Let's discuss your project requirements and how we can help bring your
+        vision to life. We're here to answer any questions and provide a
+        detailed proposal.
+      </p>
+      <div class="flex flex-col gap-4 sm:flex-row">
+        <LinkButton
+          href="mailto:nhaths4701@gmail.com?subject=Project Inquiry&body=Hi, I'm interested in discussing a project. Please let me know your availability."
+          class="px-6 py-3 text-lg font-medium"
+        >
+          <IconMail class="me-2 inline-block" />
+          Send Email
+        </LinkButton>
+        {
+          SOCIALS.length > 0 && (
+            <div class="flex flex-col sm:flex-row sm:items-center">
+              <span class="me-2 mb-2 whitespace-nowrap sm:mb-0">
+                Or connect via:
+              </span>
+              <Socials />
+            </div>
+          )
+        }
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
